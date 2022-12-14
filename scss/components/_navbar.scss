@@ -1,0 +1,25 @@
+header{
+    background-color: aquamarine;
+    .title{
+        color: green;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .nav-link{
+        border-top: 2px solid white;
+        text-align: center;
+        @media(min-width: 768px){
+            border-top: none;
+            margin: 0 10px;
+            :hover,:active{
+                color: blue;
+            }
+        }
+        @media(min-width: 1200px){
+            font-size: 1.2rem;
+        }
+        @media(min-width: 1400px){
+            font-size: 1.5rem;
+        }
+}
+}

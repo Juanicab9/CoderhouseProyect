@@ -1,0 +1,87 @@
+.comprar{
+    h2{
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: px;
+    height: 70vh;
+    background-image: url(../img/paisaje.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    form{
+        width: 80vw;
+        height: 50vh;
+        background-color: rgba(0, 128, 0, 0.575);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        color: white;
+        border: 2px solid white;
+        input{
+            background-color: aquamarine;
+        }
+        select{
+            background-color: aquamarine;
+        }
+        :hover{
+            color: black;
+            transition: 0.4s;
+        }
+    }
+}
+
+.main-index{
+    .carousel-container{
+        h2{
+            background-color: aquamarine;
+            margin-bottom: 0;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .main-index{
+        display: flex;
+        background-image: url(../img/paisaje.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height:87vh;
+        .comprar{
+            width: 50vw;
+            background-image: none;
+            form{
+                width: 50vh;
+            }
+        }
+    .carousel-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        h2{
+            color: white;
+            text-transform: uppercase;
+            background-color:rgba(255, 0, 0, 0);
+            border-top:none;
+            border-bottom:none;
+        }
+        #carouselExampleControls{  
+            width: 50vw;
+            height: 50vh;
+            margin-right: 25px;
+        }
+    }
+    } 
+}

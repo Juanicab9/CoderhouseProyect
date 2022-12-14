@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-md d-flex">
+        <nav class="container-fluid">
+        <a class="navbar-brand p-3 title" href="#">TRAVEL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" href="./index.html">INICIO</a>
+            <a class="nav-link" href="./pages/horarios.html">HORARIOS</a>
+            <a class="nav-link" href="./pages/contrataciones.html">CONTRATACIONES</a>
+            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main class="main-index">
+        <div class="comprar">
+        <h2>Compra tu pasaje:</h2>
+        <!-- FORMULARIO DE COMPRA -->
+        <form class="form-index" action="">
+            <div>
+                <label for="origen">Seleccione origen:</label>
+                <select name="Seleccione" id="origen">
+                    <option value="">Montevideo</option>
+                    <option value="">San José</option>
+                    <option value="">Colonia</option>
+                    <option value="">Maldonado</option>
+                </select>
+            </div>
+            <div>
+                <label for="destino">Seleccione destino:</label>
+                <select name="Seleccione" id="destino">
+                    <option value="">Montevideo</option>
+                    <option value="">San José</option>
+                    <option value="">Colonia</option>
+                    <option value="">Maldonado</option>
+                </select>
+            </div>
+            <div>
+                <label for="ida">Ida</label>
+                <input type="checkbox" id="ida" value="solo-ida">
+                <label for="ida-vuelta">Ida y vuelta</label>
+                <input type="checkbox" id="ida-vuelta" value="ida-vuelta">
+            </div>
+            <div>
+                <label for="fida">Fecha de salida:</label>
+                <input type="date" id="fida">
+            </div>
+            <div>
+                <label for="fvuelta">Fecha de regreso:</label>
+                <input type="date" id="fvuelta">
+            </div>
+            <div>
+                <label for="nropsj">Número de pasajeros:</label>
+                <select name="Seleccione" id="nropsj">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </div>
+            <input type="submit" value="Buscar" id="buscar">
+        </form>
+        </div>
+    <div class="carousel-container">
+        <h2>Visita estos lugares!</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/mvdeo.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pde.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/chuy.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    </main>
+    <footer class="d-flex justify-content-around align-items-center">
+    <div>
+        <span>Todos los derechos reservados | Travel</span>
+    </div>
+    <div>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-whatsapp"></i>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
