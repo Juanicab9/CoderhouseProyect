@@ -15,12 +15,14 @@
         font-size: 1.5rem;
     }
     width: 34%;
+    margin: 0px 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     td{
+    width: 1rem;
     border: 2px solid black;
     text-align: center;
     background-color:rgba(127, 255, 212, 0.644);
